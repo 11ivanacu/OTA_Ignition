@@ -1,0 +1,7 @@
+def doGet(request, session):
+	import os
+	formattedString = "<html><body>"
+	archivos = os.listdir('C:\Users\IVAN\Desktop\OTA\X-Monitoring')
+	formattedString += "%s" %(archivos)+"</body></html>"
+	print(archivos)
+	return {'html': formattedString}
