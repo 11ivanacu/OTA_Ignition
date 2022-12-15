@@ -1,0 +1,8 @@
+def doPost(request, session):
+	#get the incoming parameters
+	data = request['postData']
+	version = data['version']
+	#print in wrapper log 
+	print version
+	dir = "C:\Users\IVAN\Desktop\OTA\X-Monitoring\%s" %(version)
+	return {'file':dir}
